@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body {
   font-family: Arial;
@@ -19,25 +19,25 @@ body {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox; 
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   margin: 0 -16px;
 }
 
 .kieu-1 {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%; 
   flex: 25%;
 }
 
 .kieu-2 {
-  -ms-flex: 50%; /* IE10 */
+  -ms-flex: 50%; 
   flex: 50%;
 }
 
 .kieu-3 {
-  -ms-flex: 75%; /* IE10 */
+  -ms-flex: 75%; 
   flex: 75%;
 }
 
@@ -103,7 +103,7 @@ span.price {
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
@@ -117,7 +117,7 @@ span.price {
 </head>
 <body>
 
-<h2> Checkout Form</h2>
+<h2> Your Cart</h2>
 <p>Family Mart<p>
 <div class="row">
   <div class="kieu-3">
@@ -150,17 +150,11 @@ span.price {
 
           <div class="kieu-2">
             <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
+             
             <label for="cname">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="Vlad Akulenko" required>
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <input type="text" id="cnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
             <label for="expmonth">Exp Month</label>
             <input type="text" id="expmonth" name="expmonth" placeholder="December" required>
             <div class="row">
